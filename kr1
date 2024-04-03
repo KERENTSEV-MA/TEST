@@ -1,0 +1,20 @@
+public class Main
+{
+
+    public static void main(String[] args) {
+        // Создание экземпляров класса Phone
+        Phone phone1 = new Phone("123-456-7890", "Model X", 150.0);
+        Phone phone2 = new Phone("987-654-3210", "Model Y");
+        Phone phone3 = new Phone();
+
+        // Вывод значений переменных
+        System.out.println("Phone 1: " + phone1.number + ", " + phone1.model + ", " + phone1.weight);
+        System.out.println("Phone 2: " + phone2.number + ", " + phone2.model);
+        System.out.println("Phone 3: " + phone3.number + ", " + phone3.model + ", " + phone3.weight);
+
+        // Вызов методов
+        phone1.receiveCall("Alice");
+        phone2.receiveCall("Bob", "000-111-2222");
+        phone3.sendMessage("123-456-7890", "987-654-3210");
+    }
+}
